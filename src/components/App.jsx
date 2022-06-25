@@ -7,6 +7,7 @@ import { AuthorSubView } from './views/AuthorSubView';
 import BooksView from './views/BooksView';
 import NotFound from './NotFound/NotFound';
 import BookDetailsView from './views/BookDetailsView';
+import TableView from './views/TableView';
 // import { Layout } from 'components/Layout/Layout';
 
 export const App = () => {
@@ -22,17 +23,9 @@ export const App = () => {
           </Route>
           <Route path="books" element={<BooksView />} />
           <Route path="books/:bookId" element={<BookDetailsView />} />
+          <Route path="table" element={<TableView />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-
-        {/* <Routes>
-          <Route path="/home" element={<HomeView />} />
-          <Route path="/authors" element={<AuthorsView />} />
-          <Route path=":authorsId" element={<AuthorSubView />} />
-          <Route path="/books" element={<BooksView />} />
-          <Route path="/books/:bookId" element={<BookDetailsView />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes> */}
       </Container>
     </>
   );
