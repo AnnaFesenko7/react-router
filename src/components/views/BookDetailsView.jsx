@@ -6,9 +6,9 @@ import PageHeading from '../PageHeading/PageHeading';
 
 function BookDetailsView() {
   const { bookId } = useParams();
-
+  // const location = useNavigate();
   const [book, setBook] = useState(null);
-
+  // console.log(location);
   useEffect(() => {
     bookShelfAPI.fetchBookById(bookId).then(setBook);
   }, [bookId]);

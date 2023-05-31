@@ -14,8 +14,8 @@ const initialState = [
 ];
 
 const sortOptions = [
-  { value: 'ascending', label: 'По возрастанию' },
-  { value: 'descending', label: 'По убыванию' },
+  { value: 'ascending', label: 'По зростанню' },
+  { value: 'descending', label: 'По спаданню' },
 ];
 
 export default function TableView() {
